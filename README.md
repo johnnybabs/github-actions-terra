@@ -14,3 +14,5 @@ This repository demonstrates GitHub Actions automation for Terraform deployments
 - S3 Bucket with versioning enabled. 
 
 Nothing else done
+
+Gave Jenkins access to this repo to trigger the pipeline
