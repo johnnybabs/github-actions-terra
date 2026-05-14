@@ -15,12 +15,12 @@ provider "aws" {
 variable "bucket_suffix" {
   description = "Unique suffix for bucket name (use your initials)"
   type        = string
-  default     = "John"  # CHANGE THIS to your initials!
+  default     = "john"  # CHANGE THIS to your initials!
 }
 
 # S3 Bucket - using fixed name to prevent duplicates
 resource "aws_s3_bucket" "demo" {
-  bucket = "Jenkins-Assignment-${var.bucket_suffix}"
+  bucket = "jenkins-assignment-${var.bucket_suffix}"
 
   tags = {
     Name        = "Jenkins Assignment Bucket"
